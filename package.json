@@ -1,22 +1,29 @@
 {
-  "name": "starter-express-api",
+  "name": "video-chat-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js",
+    "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyclic-software/starter-express-api.git"
+    "url": "git+https://github.com/codesandbox-app/static-template.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cyclic-software/starter-express-api/issues"
+    "url": "https://github.com/codesandbox-app/static-template/issues"
   },
-  "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
+  "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "serve": "^11.3.2",
+    "socket.io": "^4.0.0"
   }
 }

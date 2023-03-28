@@ -50,6 +50,10 @@ io.on("connection", (socket) => {
   socket.on("answerCall", (data) => {
     io.to(data.to).emit("callAccepted", data.signal);
   });
+
+  socket.on("callEnded", ({call, id}) => {
+    io.to(call.from).emit("callEnded", id);
+  });
 });
 
 server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
